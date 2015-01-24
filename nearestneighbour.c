@@ -15,6 +15,7 @@ int main(int argc, char const *argv[])
 		}
 	}
 	hash[0]=1;
+	printf("0\n");
 	int min,next,k=0;
 	for (i = 1; i < places; i++)
 	{
@@ -24,11 +25,11 @@ int main(int argc, char const *argv[])
 			if (hash[j]==0 && j!=k && a[k][j]<min)
 			{
 				min=a[k][j];
-				next=j;
-				hash[j]=1;
+				k=j;
 			}
 		}
-		printf("%d\n",next);
+		hash[k]=1;
+		printf("%d\n",k);
 	}
 	return 0;
 }
