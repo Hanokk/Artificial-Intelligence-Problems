@@ -1,21 +1,21 @@
-1.Write a program to solve Traveling Salesman problem. The heuristic function used, number of nodes generated,
+1. Write a program to solve Traveling Salesman problem. The heuristic function used, number of nodes generated,
 depth of the search at each stages should be given in the form of a table;
 
-2.Write a program to solve 8 puzzle problem with different heuristics; 
+2. Write a program to solve 8 puzzle problem with different heuristics; 
 
-3.Implement the alpha – beta search procedures. Use it to play the game tic-tac-toe. At the
+3. Implement the alpha – beta search procedures. Use it to play the game tic-tac-toe. At the
 end of the game your program should give the number of nodes generated, cut-off values at each stages in the
 form of a table; 
 
-4.Write an ATN interpreter. Minimize the amount of information that must be stored at each node to allow back-up; 
+4. Write an ATN interpreter. Minimize the amount of information that must be stored at each node to allow back-up; 
 
-5.Write an Eliza like program to converse in some domain. The program should consist of two parts,
+5. Write an Eliza like program to converse in some domain. The program should consist of two parts,
 a database of rules and the code that matches rules against the input and uses them to generate output. The left
 side of each rule should be a pattern that can be matched against a sentence input by the user. The right side should
 specify the response that the system will generate if the corresponding left side matches; 
 
-6.Develop an knowledge base system consisting of facts and rules about some specialized knowledge domain of your choice; 
+6. Develop an knowledge base system consisting of facts and rules about some specialized knowledge domain of your choice; 
 
-7.Implement Unification Algorithms. Input data sets may be any Well Formed Formulas; 
+7. Implement Unification Algorithms. Input data sets may be any Well Formed Formulas; 
 
-8.Write a program to schedule a meeting between five busy people using default reasoning. The output should give the time, place and day of the meeting. 
+8. Write a program to schedule a meeting between five busy people using default reasoning. The output should give the time, place and day of the meeting. 
