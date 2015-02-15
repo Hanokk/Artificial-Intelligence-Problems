@@ -3,19 +3,23 @@ rules=[(['hello','hi'],["hi there how may i help you"]),
 	(["headache"],["take rest"]),
 	(["mad","angry","crazy"],["why do you think"]),
 	(["yes"],["are u sure"]),
-	(["Thanks"],[])]
+	(["thanks"],["you are welcome :)"])]
 
 while True:
-    f=open(data,"r")
+    flag=""
     input=raw_input()
     split=input.split()
     for word in split:
         for rule in rules:
-            for key in rule:
+            for key in rule[0]:
                 if word == key:
-                    result="found"
-        if result=="found":
-            print rule[1]
-
+                    flag="found"
+                    result=rule[1]
+                    print result[0]
+                    break
+            if flag=="found":
+                break
+        if flag=="found":
+                break
         
             
