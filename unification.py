@@ -27,8 +27,6 @@ else:
                         a[j]=p
                     if b[j]==q:
                         b[j]=p
-                print a
-                print b
     else:
         print "Can't be Unified"
 
