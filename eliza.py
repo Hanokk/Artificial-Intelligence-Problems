@@ -4,7 +4,7 @@ rules=[(['hello','hi'],["hi there how may i help you"]),
 	(["yes"],["are u sure"]),
 	(["what","when","where","how"],["Seriously,Do u really need to know?"]),
 	(["thanks"],["you are welcome :)"])]
-replace=[("you","me"),
+replace=[("you","i"),
 	("your","my"),
 	("i","you"),
 	("my","your"),
@@ -17,6 +17,15 @@ def join(split):
         new=new+" "+word
     return new
 
+def modify(split):
+    count=0
+    for word in split:
+        for rep in replace:
+	    if word==rep[0]:
+	        split[count]=rep[1]
+	        break
+        count=count+1
+    return join(split)
 
 while True:
     flag=""
@@ -27,19 +36,14 @@ while True:
         rulecount=0
         for rule in rules:
             for key in rule[0]:
-		for rep in replace:
-		    if word==rep[0]:
-			split[count]=rep[1]
-		        flag2=1
-			break
                 if word == key:
                     flag="found"
                     result=rule[1]
 		    if rulecount==2:
-                        print result[0]+join(split)
+                        print result[0]+modify(split)
                         break
 		    elif rulecount==4:
-			print result[0]+join(split)
+			print result[0]+modify(split)
                         break
 		    else:
 			print result[0]
@@ -49,5 +53,3 @@ while True:
         if flag=="found":
                 break
         count=count+1
-        
-
