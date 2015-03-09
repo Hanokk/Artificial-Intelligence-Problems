@@ -3,8 +3,8 @@ rules=[(['hello','hi'],["hi there how may i help you"]),
 	(["mad","angry","crazy","sick","bad","mean"],["why do you think"]),
 	(["yes"],["are u sure"]),
 	(["what","when","where","how"],["Seriously,Do u really need to know?"]),
-	(["thanks"],["you are welcome :)"])]
-replace=[("you","i"),
+	(["thanks"],["you are welcome :) \nanything else"])]
+replace=[("you","me"),
 	("your","my"),
 	("i","you"),
 	("my","your"),
@@ -29,8 +29,10 @@ def modify(split):
 
 while True:
     flag=""
+    print "You:"
     input=raw_input()
     split=input.split()
+    print "Eliza:"
     count=0
     for word in split:
         rulecount=0
@@ -49,7 +51,9 @@ while True:
 			print result[0]
             if flag=="found":
                 break
-	    rulecount=rulecount+1  
+	    rulecount=rulecount+1
         if flag=="found":
                 break
+	else:
+	    print "Tell me more"
         count=count+1
